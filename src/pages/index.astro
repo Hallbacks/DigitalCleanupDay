@@ -1,0 +1,16 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import { Image } from 'astro:assets';
+import digitalcleanupday from '../assets/images/dcd.png'; 
+
+---
+<MainLayout title="Digital Cleanup Day">
+	<article>
+		<section>
+			<h2>Hvad er digitalt skrald?</h2>
+			<Image src={digitalcleanupday} alt="dcd" class="h-80 w-80"></Image>
+		</section>
+	</article>
+	</body>
+</MainLayout>

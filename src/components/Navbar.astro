@@ -1,62 +1,30 @@
 ---
+import Button from "../components/Button.astro";
 ---
 
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-yellow-50">
-  <div id="navbar" class="flex flex-row justify-between">
-    <div id="logo" class="uppercase font-bold">
-      <a href="#">Digital Cleanup Day 2024</a>
-    </div>
-    <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row gap-8">
-        <li class="hover:font-bold">
-          <a href="#">Hvad er digitalt affald?</a>
-        </li>
-        <li class="hover:font-bold">
-          <a href="#">Problemet med digitalt affald</a>
-        </li>
-        <li class="hover:font-bold"><a href="#">Vidste du?</a></li>
-        <li class="hover:font-bold"><a href="#">Hvordan gør jeg?</a></li>
-        <li class="hover:font-bold">
-          <a href="#">Hvor meget har jeg slettet?</a>
-        </li>
-        <li class="hover:font-bold">
-          <a href="#">Ryd op i mobil lagerplads</a>
-        </li>
-      </ul>
-    </nav>
-    <button
-      id="burgermenu"
-      class="lg:hidden hover:font-bold"
-      x-on:click="showmenu = ! showmenu">Menu</button
-    >
+<div x-data="{ showmenu: false }" class="" >
+  <div id="navbar" class="flex flex-row justify-between ">
+      <nav id="desktopmenu" class="hidden lg:block">
+          <ul class="flex flex-row gap-6 lg:pr-26 lg:pt-4">
+              <li class="text-red-900 hover:text-lime-900 hover:underline decoration-solid"><a href="#link1">Digitalt affald?</a></li>
+              <li class="text-red-900 hover:text-lime-900 hover:underline decoration-solid"><a href="#link2">Om problemet</a></li>
+              <li class="text-red-900 hover:text-lime-900 hover:underline decoration-solid"><a href="#link3">Vidste du?</a></li>
+              <li class="text-red-900 hover:text-lime-900 hover:underline decoration-solid"><a href="#link4">Hvordan gør jeg?</a></li>
+              <li class="text-red-900 hover:text-lime-900 hover:underline decoration-solid"><a href="#link5">Hvor meget?</a></li>
+              <Button variant="secondary" size="small">Tilmeld</Button>
+          </ul>
+      </nav>
+      <button id="burgermenu" class="lg:hidden pr-4 mx-24 pt-4 text-red-900 font-semibold" x-on:click="showmenu = ! showmenu">Menu</button>
   </div>
-  <nav
-    id="mobilmenu"
-    class="flex flex-col content-center pt-4"
-    x-show="showmenu"
-    x-transition
-    x-on:click="showmenu = false"
-    x-on:click.outside="showmenu = false"
-  >
-    <ul>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Hvad er digitalt affald?</a>
-      </li>
-      <li class="text-center py-2  hover:font-bold">
-        <a href="#">Problemet med digitalt affald</a>
-      </li>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Vidste du?</a>
-      </li>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Hvordan gør jeg?</a>
-      </li>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Hvor meget har jeg slettet?</a>
-      </li>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Ryd op i mobil lagerplads</a>
-      </li>
-    </ul>
+  <nav id="mobilmenu" class="flex flex-col pt-4" 
+  x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+      <ul class= "font-light">
+          <li class="text-red-900 text-center py-4 "><a href="#link1">Digitalt affald?</a></li>
+          <li class="text-red-900 text-center py-4 "><a href="#link2">Om problemet</a></li>
+          <li class="text-red-900 text-center py-4 "><a href="#link3">Vidste du?</a></li>
+          <li class="text-red-900 text-center py-4 "><a href="#link4">Hvordan gør jeg?</a></li>
+          <li class="text-red-900 text-center py-4 "><a href="#link4">Hvor meget?</a></li>
+          <Button class="px-10" variant="secondary" size="small">Tilmeld</Button>
+      </ul>
   </nav>
 </div>

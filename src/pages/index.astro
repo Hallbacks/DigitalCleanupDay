@@ -1,10 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import { Image } from 'astro:assets';
-import digitalcleanupday from '../assets/images/dcd.png'; 
 import Hero from '../components/Hero.astro';
-
+import Sektion3 from '../components/Sektion3.astro'
 ---
 <body class="">
 <MainLayout title="Digital Cleanup Day">
@@ -14,12 +11,7 @@ import Hero from '../components/Hero.astro';
 		</section>
 
 		<section>
-			<Image src={digitalcleanupday} alt="dcd" class="h-80 w-80"></Image>
-			<h1 class="uppercase">Digital Cleanup Day 2024</h1>
+			<Sektion3></Sektion3>
 		</section>
-	</article>
-	</body>
-	<Button variant="primary" size="large">Primary button</Button>
-	<Button variant="secondary" size="large">Secondary button</Button>
 
 </MainLayout>

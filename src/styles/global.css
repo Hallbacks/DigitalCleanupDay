@@ -27,6 +27,11 @@ h1 {
   line-height: 0.7;
 }
 
+h2 {
+  font-family: Governor;
+  font-size: 2rem;
+  line-height: 0.7;
+}
 p,
 h3 {
   line-height: 1.8;

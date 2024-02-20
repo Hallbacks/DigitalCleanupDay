@@ -2,6 +2,9 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from '../components/Hero.astro';
 import Sektion3 from '../components/Sektion3.astro'
+import Sektion5 from '../components/Sektion5.astro'
+import { Image } from 'astro:assets';
+import kost from '../assets/images/kost.svg'; 
 ---
 <body class="">
 <MainLayout title="Digital Cleanup Day">
@@ -10,8 +13,12 @@ import Sektion3 from '../components/Sektion3.astro'
 			<Hero></Hero>
 		</section>
 
-		<section>
+		<section class="w-full">
 			<Sektion3></Sektion3>
+		</section>
+
+		<section class="w-full">
+			<Sektion5></Sektion5>
 		</section>
 
 </MainLayout>

@@ -1,0 +1,62 @@
+---
+---
+
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-yellow-50">
+  <div id="navbar" class="flex flex-row justify-between">
+    <div id="logo" class="uppercase font-bold">
+      <a href="#">Digital Cleanup Day 2024</a>
+    </div>
+    <nav id="desktopmenu" class="hidden lg:block">
+      <ul class="flex flex-row gap-8">
+        <li class="hover:font-bold">
+          <a href="#">Hvad er digitalt affald?</a>
+        </li>
+        <li class="hover:font-bold">
+          <a href="#">Problemet med digitalt affald</a>
+        </li>
+        <li class="hover:font-bold"><a href="#">Vidste du?</a></li>
+        <li class="hover:font-bold"><a href="#">Hvordan gør jeg?</a></li>
+        <li class="hover:font-bold">
+          <a href="#">Hvor meget har jeg slettet?</a>
+        </li>
+        <li class="hover:font-bold">
+          <a href="#">Ryd op i mobil lagerplads</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      id="burgermenu"
+      class="lg:hidden hover:font-bold"
+      x-on:click="showmenu = ! showmenu">Menu</button
+    >
+  </div>
+  <nav
+    id="mobilmenu"
+    class="flex flex-col content-center pt-4"
+    x-show="showmenu"
+    x-transition
+    x-on:click="showmenu = false"
+    x-on:click.outside="showmenu = false"
+  >
+    <ul>
+      <li class="text-center py-2 hover:font-bold">
+        <a href="#">Hvad er digitalt affald?</a>
+      </li>
+      <li class="text-center py-2  hover:font-bold">
+        <a href="#">Problemet med digitalt affald</a>
+      </li>
+      <li class="text-center py-2 hover:font-bold">
+        <a href="#">Vidste du?</a>
+      </li>
+      <li class="text-center py-2 hover:font-bold">
+        <a href="#">Hvordan gør jeg?</a>
+      </li>
+      <li class="text-center py-2 hover:font-bold">
+        <a href="#">Hvor meget har jeg slettet?</a>
+      </li>
+      <li class="text-center py-2 hover:font-bold">
+        <a href="#">Ryd op i mobil lagerplads</a>
+      </li>
+    </ul>
+  </nav>
+</div>

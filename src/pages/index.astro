@@ -5,12 +5,15 @@ import { Image } from 'astro:assets';
 import digitalcleanupday from '../assets/images/dcd.png'; 
 
 ---
+<body class="p-4 lg:px-16">
 <MainLayout title="Digital Cleanup Day">
 	<article>
 		<section>
-			<h2>Hvad er digitalt skrald?</h2>
 			<Image src={digitalcleanupday} alt="dcd" class="h-80 w-80"></Image>
+			<h1 class="uppercase">Digital Cleanup Day 2024</h1>
 		</section>
 	</article>
 	</body>
+	<Button variant="primary" size="large">Primary button</Button>
+	<Button variant="secondary" size="large">Secondary button</Button>
 </MainLayout>

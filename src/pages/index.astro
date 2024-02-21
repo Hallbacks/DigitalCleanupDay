@@ -150,23 +150,26 @@ import digitalcleanupday from "../assets/images/dcd.png";
     id="section_4"
     class="bg-[#D6D1BE] mt-20 p-4 outline max-w-7xl mx-auto"
   >
-    <h1 class="mb-8 text-[#7E2512]">Registrér din digitale oprydning</h1>
+    <h1 class="mb-8 text-[#7E2512] text-center">
+      Registrér din digitale oprydning
+    </h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2">
       <div class="p-4">
-        <img src="section_6.svg" alt="" />
+        <img src="section_6.svg" alt="Cleaning" class="md:w-2/3" />
       </div>
 
       <div>
-        <form class="max-w-4xl w-full md:w-2/4 mx-auto px-4">
-                    <div class="mb-4 mt-4">
+        <form class="max-w-4xl w-full md:w-3/4 mx-auto px-4">
+          <div class="mb-4 mt-4">
             <label for="surname" class="block"></label>
             <input
               type="text"
               id="surname"
               name="surname"
               placeholder="Fornavn*"
-              class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"            />
+              class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+            />
           </div>
 
           <div class="mb-4 mt-4">
@@ -207,7 +210,9 @@ import digitalcleanupday from "../assets/images/dcd.png";
               class="bg-[#F3EFEA] border-none border-2 px-3 rounded-full flex items-center justify-between"
               style="border-color: #6B7280; border-width: 1px"
             >
-              <label for="quantity" class="mr-3 text-[#6F7583]">Antal deltagere*</label>
+              <label for="quantity" class="mr-3 text-[#6F7583]"
+                >Antal deltagere*</label
+              >
               <input
                 type="number"
                 id="quantity"
@@ -217,13 +222,15 @@ import digitalcleanupday from "../assets/images/dcd.png";
               />
             </div>
           </div>
-          
+
           <div class="mb-4">
             <div
               class="bg-[#F3EFEA] border-none border-2 px-3 rounded-full flex items-center justify-between"
               style="border-color: #6B7280; border-width: 1px"
             >
-              <label for="quantity" class="mr-3 text-[#6F7583]">Slettet GB*</label>
+              <label for="quantity" class="mr-3 text-[#6F7583]"
+                >Slettet GB*</label
+              >
               <input
                 type="number"
                 id="quantity"
@@ -233,18 +240,23 @@ import digitalcleanupday from "../assets/images/dcd.png";
               />
             </div>
           </div>
-          
-                <div class="pt-4">
-                    <input type="checkbox" class="rounded border-[#F3EFEA]" />
-                    <label>Jeg accepterer vilkårene</label>
-                    <div class="my-5">
-                      <input type="checkbox" class="rounded border-[#F3EFEA]" />
-                      <label
-                        >Jeg ønsker at tilmelde mig nyhedsbrevet fra World
-                        Cleanup Day</label
-                      >
-                    </div>
 
-                    <div class="mb-5">
-                      <Button variant="primary" size="large">Indsend</Button>
-                    </div>
+          <div class="pt-4">
+            <input type="checkbox" class="rounded border-[#F3EFEA]" />
+            <label>Jeg accepterer vilkårene</label>
+            <div class="my-5">
+              <input type="checkbox" class="rounded border-[#F3EFEA]" />
+              <label
+                >Jeg ønsker at tilmelde mig nyhedsbrevet fra World Cleanup Day</label
+              >
+            </div>
+
+            <div class="mb-5">
+              <Button variant="primary" size="large">Indsend</Button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section></body
+>

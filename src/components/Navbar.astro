@@ -16,7 +16,6 @@ import Button from "../components/Button.astro";
       </nav>
       <button id="burgermenu" class="lg:hidden pr-4 mx-24 pt-4 text-red-900 font-semibold" x-on:click="showmenu = ! showmenu">Menu</button>
   </div>
-<<<<<<< HEAD
   <nav id="mobilmenu" class="flex flex-col pt-4" 
   x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
       <ul class= "font-light">
@@ -27,35 +26,5 @@ import Button from "../components/Button.astro";
           <li class="text-red-900 text-center py-4 "><a href="#link4">Hvor meget?</a></li>
           <Button class="px-10" variant="secondary" size="small">Tilmeld</Button>
       </ul>
-=======
-  <nav
-    id="mobilmenu"
-    class="flex flex-col content-center pt-4"
-    x-show="showmenu"
-    x-transition
-    x-on:click="showmenu = false"
-    x-on:click.outside="showmenu = false"
-  >
-    <ul>
-      <li class="text-center py-2 border-y-2 hover:font-bold">
-        <a href="#">Hvad er digitalt affald?</a>
-      </li>
-      <li class="text-center py-2 border-b-2 hover:font-bold">
-        <a href="#">Problemet med digitalt affald</a>
-      </li>
-      <li class="text-center py-2 border-b-2 hover:font-bold">
-        <a href="#">Vidste du?</a>
-      </li>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Hvordan gør jeg?</a>
-      </li>
-      <li class="text-center py-2 hover:font-bold">
-        <a href="#">Hvor meget har jeg slettet?</a>
-      </li>
-      <li class="text-center py-2 border-b-2 hover:font-bold">
-        <a href="#">Ryd op i mobil lagerplads</a>
-      </li>
-    </ul>
->>>>>>> Ida
   </nav>
 </div>

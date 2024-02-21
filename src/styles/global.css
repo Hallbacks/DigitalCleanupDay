@@ -12,22 +12,20 @@
 }
 
 body, main {
-    background-color: var(--primary-background-color);
+    background-color: var(--secondary-background-color);
 }
 
 @font-face{
-    font-family: Governor;
-    src: url(Governor.ttf);
+    font-family: Maver;
+    src: url(Maver.ttf);
 }
 
-h1 {
-    font-family: Governor;
-    font-size: 4rem;
-    line-height: 0.7;
+h1 , h2 {
+    font-family: Maver;
+    font-size: var( --xxlg-size);
+    line-height: 0.9;
 }
 
 * {
-    line-height: 1.8;
     font: Helvetica;
-    font-weight: lighter;
 }

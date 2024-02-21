@@ -1,24 +1,22 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from '../components/Hero.astro';
-import Sektion3 from '../components/Sektion3.astro'
-import Sektion5 from '../components/Sektion5.astro'
+import Button from '../components/Button.astro';
 import { Image } from 'astro:assets';
-import kost from '../assets/images/kost.svg'; 
+import digitalcleanupday from '../assets/images/dcd.png'; 
+
 ---
-<body class="">
+<body class="p-4 lg:px-16">
 <MainLayout title="Digital Cleanup Day">
 	<article>
-		<section class="pt-52 lg:pt-32 lg:pb-32">
-			<Hero></Hero>
+		<section>
+			<Image src={digitalcleanupday} alt="dcd" class="h-80 w-80"></Image>
+			<h1 class="uppercase">Digital Cleanup Day 2024</h1>
 		</section>
+	</article>
+	</body>
+	<Button variant="primary" size="large">Primary button</Button>
+	<Button variant="secondary" size="large">Secondary button</Button>
 
-		<section class="w-full">
-			<Sektion3></Sektion3>
-		</section>
-
-		<section class="w-full">
-			<Sektion5></Sektion5>
-		</section>
-
+	<p>hej</p>
+	<p>hej laura</p>
 </MainLayout>

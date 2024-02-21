@@ -11,6 +11,7 @@
   --border-width: 2px;
 }
 
+<<<<<<< HEAD
 body,
 main {
   background-color: var(--primary-background-color);
@@ -38,3 +39,19 @@ h3 {
   font: Helvetica;
   font-weight: lighter;
 }
+=======
+@font-face{
+    font-family: Maver;
+    src: url(Maver.ttf);
+}
+
+h1 , h2 {
+    font-family: Maver;
+    font-size: var( --xxlg-size);
+    line-height: 0.9;
+}
+
+* {
+    font: Helvetica;
+}
+>>>>>>> Ida

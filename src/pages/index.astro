@@ -3,24 +3,21 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from '../components/Hero.astro';
 import Sektion3 from '../components/Sektion3.astro'
 import Sektion5 from '../components/Sektion5.astro'
-import { Image } from 'astro:assets';
-import kost from '../assets/images/kost.svg'; 
+import Button from "../components/Button.astro";
 ---
 
-<body class="bg-[#F3EFEA]">
+<body>
 <MainLayout title="Digital Cleanup Day">
 	<article>
 
 		 <!-- Hero unit -->
-		<section class="pt-52 lg:pt-32 lg:pb-32">
+		<section class="pt-52 lg:pt-32 lg:pb-32 bg-[#D6D1BE]">
 			<Hero></Hero>
 		</section>
 
     <!-- SEKTION 1 -->
-    <section
-      id="section_1"
-      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2"
-    >
+   <a href=sektion1> <section id="sektion1" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:pt-14 lg:pb-20">
+
       <div class="p-4 flex items-center justify-center col-span-1 sm:order-1">
         <img
           src="section_1.svg"
@@ -31,7 +28,7 @@ import kost from '../assets/images/kost.svg';
       </div>
       <div class="p-4 flex flex-col justify-center col-span-1 sm:order-2">
         <div>
-          <h2 class="font-bold text-[#7E2512]">Hvad er digitalt skrald?</h2>
+          <h2 class="text-[#7E2512] text-3xl text-center lg:text-5xl lg:text-left ">Hvad er digitalt skrald?</h2>
           <p class="py-10 prose text-[#7E2512]">
             Digitalt affald, eller e-affald, er ikke kun begrænset til de
             fysiske enheder, der samler støv i vores skabe. <br />
@@ -51,17 +48,17 @@ import kost from '../assets/images/kost.svg';
           </p>
         </div>
       </div>
-    </section>
+    </section> </a>
 
     <!-- SEKTION 2 -->
-    <section
-      id="section_1"
+    <a href=sektion2> <section
+      id="sektion2"
       class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2"
     >
       <div class="p-4 flex flex-col justify-center
        col-span-1 sm:order-1">
         <div>
-          <h2 class="font-bold text-[#3C4A30]">
+          <h2 class="text-[#3C4A30] text-3xl text-center lg:text-5xl lg:text-left">
             Hvad er problemet med digitalt skrald?
           </h2>
           <p class="py-10 prose text-[#3C4A30]">
@@ -81,27 +78,29 @@ import kost from '../assets/images/kost.svg';
           </p>
         </div>
       </div>
-      <div class="p-4 flex items-center justify-center col-span-1 sm:order-2">
+      <div class="p-4 flex items-center justify-center col-span-1 sm:order-2 pb-16">
         <img
           src="section_2.svg"
           alt="section_2-svg"
-          class="w-50 sm:w-90"
+          class="w-50 sm:w-90 lg:w-42"
           style="max-width: 100%; height: auto;"
         />
       </div>
-    </section>
+    </section> </a>
 
 	 <!-- SEKTION 3 -->
-	<section class="w-full">
+	 <a href=sektion3><section id="sektion3" class="w-full bg-[#D6D1BE]"> 
 		<Sektion3></Sektion3>
-	</section>
+	</section> </a>
 
     <!-- SEKTION 4 -->
-    <div class="mt-20 max-full mx-auto grid grid-cols-1">
-      <h2 class="font-bold lg:px-60 text-[#7E2512] pl-4">
+    <a href=sektion4> <section id="sektion4">
+		
+		<div class="mt-20 max-full mx-auto grid grid-cols-1">
+      <h2 class="lg:px-60 text-[#7E2512] pl-4 text-3xl text-center lg:text-5xl">
         Hvordan kan digitalt skrald fjernes?
       </h2>
-      <p class="py-10 text-[#7E2512] lg:px-60 pl-4">
+      <p class="py-10 text-[#7E2512] lg:px-60 pl-4 lg:text-center">
         Lad os begive os ud på et digitalt oprydningseventyr for at frigøre
         plads på vores enheder! <br /> Her er hvordan vi kan tackle det digitale
         affaldsproblem.
@@ -109,10 +108,10 @@ import kost from '../assets/images/kost.svg';
     </div>
 
     <section id="section_4" class="p-4 max-w-7xl mx-auto">
-      <div class="lg:pl-28 lg:grid lg:grid-cols-2 lg:grid-rows-3">
+      <div class="lg:pl-28 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:pb-14">
         <!-- RÆKKE 1 -->
         <div class="flex lg:block p-5">
-          <div class="flex lg:w-4/5 gap-4">
+          <div class="flex lg:w-2/3 gap-4">
             <img
               src="section_4.1.svg"
               alt="Bin"
@@ -176,12 +175,12 @@ import kost from '../assets/images/kost.svg';
         </div>
 
         <!-- RÆKKE 3 -->
-        <div class="flex lg:block p-5">
-          <div class="flex lg:w-4/5 gap-4">
+        <div class="flex lg:block p-5 ">
+          <div class="flex lg:w-4/6  gap-4">
             <img
               src="section_4.5.svg"
               alt="Bin"
-              class="w-1/2 h-auto mb-4 lg:mb-0"
+              class="w-2/3 h-auto mb-4 lg:mb-0"
             />
             <p class="text-[#7E2512]">
               <strong>Magi med Cloud Storage</strong>
@@ -197,7 +196,7 @@ import kost from '../assets/images/kost.svg';
             <img
               src="section_4.6.svg"
               alt="Bin"
-              class="w-1/2 h-auto mb-4 lg:mb-0"
+              class="lg:w-16 w-10 h-auto mb-4 lg:mb-0"
             />
             <p class="text-[#7E2512]">
               <strong>Udnyt indbyggede værktøjer</strong>
@@ -208,10 +207,11 @@ import kost from '../assets/images/kost.svg';
             </p>
           </div>
         </div>
-      </div>
+      </div> 
+	</section>
 
       <!-- GUL BOKS -->
-      <div class="bg-[#D1C56D] max-full mx-auto grid grid-cols-1">
+      <div class="bg-[#D1C56D] lg:py-12 grid grid-cols-1">
         <p class="p-10 text-center text-[#3C4A30] font-light text-xl">
           Med hver digital oprydningssession genopretter vi ikke kun lagerplads <br
           /> – vi puster nyt liv i vores enheder, øger ydeevnen og forbedrer vores
@@ -221,17 +221,17 @@ import kost from '../assets/images/kost.svg';
       </div>
 
 	   <!-- SEKTION 5 -->
-	  <section class="w-full">
+	   <a href=sektion5><section id="sektion5" class="w-full">
 		<Sektion5></Sektion5>
-	</section>
+	</section></a>
 
       <!-- SEKTION 6 -->
-      <section id="section_4" class="bg-[#D6D1BE] p-4 max-w-7xl mx-auto">
-        <h1 class="mb-8 text-[#7E2512] text-center">
+      <a href=sektion6> <section id="sektion6" class="bg-[#D6D1BE]">
+        <h1 class="mb-8 text-[#7E2512] text-center pt-10 text-3xl lg:pt-16 lg:pb-14 lg:text-5xl">
           Registrér din digitale oprydning
-        </h1>
+        </h1>  </a>
 
-        <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:pb-14">
           <div class="p-4">
             <img src="section_6.svg" alt="Cleaning" class="md:ml-48 md:w-2/3" />
           </div>
@@ -245,7 +245,7 @@ import kost from '../assets/images/kost.svg';
                   id="surname"
                   name="surname"
                   placeholder="Fornavn*"
-                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:border-2 focus:border-[#7E2512]"
                 />
               </div>
 
@@ -256,7 +256,7 @@ import kost from '../assets/images/kost.svg';
                   id="lastname"
                   name="lastname"
                   placeholder="Efternavn*"
-                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:border-2 focus:border-[#7E2512]"
                 />
               </div>
 
@@ -267,7 +267,7 @@ import kost from '../assets/images/kost.svg';
                   id="email"
                   name="email"
                   placeholder="E-mail adresse*"
-                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:border-2 focus:border-[#7E2512]"
                 />
               </div>
 
@@ -278,7 +278,7 @@ import kost from '../assets/images/kost.svg';
                   id="organisation"
                   name="organisation"
                   placeholder="Virksomhed (valgfrit)"
-                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+                  class="rounded-full bg-[#F3EFEA] p-3 border-[#F3EFEA] w-full hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:border-2 focus:border-[#7E2512]"
                 />
               </div>
 
@@ -293,7 +293,7 @@ import kost from '../assets/images/kost.svg';
                   <input
                     type="number"
                     id="quantity"
-                    class="bg-[#F3EFEA] quantity-input w-16 border-none p-3 text-[#6F7583]"
+                    class="bg-[#F3EFEA] quantity-input w-16 border-none p-3 text-[#6F7583] focus:border-2 focus:border-[#7E2512]"
                     value="0"
                     min="0"
                   />
@@ -305,7 +305,7 @@ import kost from '../assets/images/kost.svg';
                   class="bg-[#F3EFEA] border-none border-2 px-7 rounded-full flex items-center justify-between"
                   style="border-color: #6B7280; border-width: 1px"
                 >
-                  <label for="quantity" class="mr-3 text-[#6F7583]"
+                  <label for="quantity" class="mr-3 text-[#6F7583] "
                     >Slettet GB*</label
                   >
                   <input
@@ -322,21 +322,21 @@ import kost from '../assets/images/kost.svg';
                 <input type="checkbox" class="rounded border-[#F3EFEA]" />
                 <label>Jeg accepterer vilkårene</label>
                 <div class="my-5">
-                  <input type="checkbox" class="rounded border-[#F3EFEA]" />
+                  <input type="checkbox" class="rounded border-[#F3EFEA] focus:border-2 focus:border-[#7E2512]" />
                   <label
                     >Jeg ønsker at tilmelde mig nyhedsbrevet fra World Cleanup
                     Day</label
                   >
                 </div>
 
-                <div class="mb-5">
-                  <!-- <Button variant="primary" size="large">Indsend</Button> -->
+                <div class="mb-5 flex justify-center pb-10">
+                  <Button variant="primary" size="large">Indsend</Button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </section>
+      </section> 
     </section>
   </MainLayout>
 </body>

@@ -13,7 +13,7 @@
 
 body,
 main {
-  background-color: var(--primary-background-color);
+  background-color: #f3efea;
 }
 
 @font-face {

@@ -6,33 +6,15 @@ import Sektion5 from '../components/Sektion5.astro'
 import { Image } from 'astro:assets';
 import kost from '../assets/images/kost.svg'; 
 ---
-<<<<<<< HEAD
-<body class="">
+
+<body class="bg-[#F3EFEA]">
 <MainLayout title="Digital Cleanup Day">
 	<article>
+
+		 <!-- Hero unit -->
 		<section class="pt-52 lg:pt-32 lg:pb-32">
 			<Hero></Hero>
 		</section>
-
-		<section class="w-full">
-			<Sektion3></Sektion3>
-		</section>
-
-		<section class="w-full">
-			<Sektion5></Sektion5>
-		</section>
-
-</MainLayout>
-=======
-
-<body class="bg-[#F3EFEA]">
-  <MainLayout title="Digital Cleanup Day">
-    <article>
-      <section>
-        <Image src={digitalcleanupday} alt="dcd" class="h-80 w-80" />
-        <h1 class="uppercase">Digital Cleanup Day 2024</h1>
-      </section>
-    </article>
 
     <!-- SEKTION 1 -->
     <section
@@ -108,6 +90,11 @@ import kost from '../assets/images/kost.svg';
         />
       </div>
     </section>
+
+	 <!-- SEKTION 3 -->
+	<section class="w-full">
+		<Sektion3></Sektion3>
+	</section>
 
     <!-- SEKTION 4 -->
     <div class="mt-20 max-full mx-auto grid grid-cols-1">
@@ -233,6 +220,11 @@ import kost from '../assets/images/kost.svg';
         </p>
       </div>
 
+	   <!-- SEKTION 5 -->
+	  <section class="w-full">
+		<Sektion5></Sektion5>
+	</section>
+
       <!-- SEKTION 6 -->
       <section id="section_4" class="bg-[#D6D1BE] p-4 max-w-7xl mx-auto">
         <h1 class="mb-8 text-[#7E2512] text-center">
@@ -338,7 +330,7 @@ import kost from '../assets/images/kost.svg';
                 </div>
 
                 <div class="mb-5">
-                  <Button variant="primary" size="large">Indsend</Button>
+                  <!-- <Button variant="primary" size="large">Indsend</Button> -->
                 </div>
               </div>
             </form>
@@ -348,4 +340,4 @@ import kost from '../assets/images/kost.svg';
     </section>
   </MainLayout>
 </body>
->>>>>>> Ida
+
